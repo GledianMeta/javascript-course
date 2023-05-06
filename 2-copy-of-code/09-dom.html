@@ -4,32 +4,36 @@
     <title>DOM</title>
   </head>
   <body>
-    <button>hello</button>
+    <button>Hello</button>
     <button class="js-button">Second button</button>
 
     <script>
-      console.log(document.querySelector('button').innerHTML);
-      document.querySelector('button')
-        .innerHTML = 'Changed';
-
-      const buttonElement = document.querySelector('.js-button');
-      console.log(buttonElement);
-      
+      // DOM another built-in object (document object model which represents/models the web page)
       /*
+      document.body.innerHTML = "hello"; // object(document).propertieObject(document).propertie(Body)
+      document.title = "Good job!";
+      */
+      
       console.log(document.title);
       document.title = 'Changed';
 
-      console.log(document.body);
+      console.log(document.body); // restituisce l'elemento <body> </body> e il suo contenuto presente in Html
       console.log(typeof document.body);
 
+
+      /*
       console.log(document.body.innerHTML);
       document.body.innerHTML = '<button>Good job!</button>';
+      
+
+      console.log(document.querySelector("button").innerHTML);
+
+      document.querySelector("button").innerHTML = "Changed";
+
+      const buttonElement = document.querySelector(".js-button");
+      console.log(buttonElement);
       */
       
-      /*
-      document.body.innerHTML = 'hello';
-      document.title = 'Good job!';
-      */
     </script>
   </body>
 </html>
